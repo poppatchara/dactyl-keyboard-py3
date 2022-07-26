@@ -1,27 +1,27 @@
 {
     "ENGINE": "solid",
-    "save_dir": ".",
-    "config_name": "DM",
-    "show_caps": "MX",
-    "show_pcbs": false,
+    "save_dir": "DM_5x6_NOTCHPLT_DEFTMB_OLED_EXTCTRL",
+    "config_name": "DM_5x6_NOTCHPLT_DEFTMB_OLED_EXTCTRL",
+    "show_caps": false,
+    "show_pcbs": "MX",
     "nrows": 5,
     "ncols": 6,
     "alpha": 0.26179916666666664,
     "beta": 0.08726638888888888,
     "centercol": 3,
     "centerrow_offset": 3,
-    "tenting_angle": 0.26179916666666664,
+    "tenting_angle": 0.2094333,
     "symmetry": "symmetric",
     "column_style_gt5": "orthographic",
     "column_style": "standard",
     "reduced_inner_cols": 2,
-    "reduced_outer_cols": 0,
+    "reduced_outer_cols": 2,
     "thumb_offsets": [
         6,
         -3,
         7
     ],
-    "keyboard_z_offset": 11,
+    "keyboard_z_offset": 12,
     "extra_width": 2.5,
     "extra_height": 1.0,
     "web_thickness": 5.1,
@@ -170,8 +170,8 @@
     "tbiw_oled_center_row": 0.75,
     "tbiw_oled_translation_offset": [
         -3.5,
-        0,
-        1.5
+        2.5,
+        0
     ],
     "tbiw_oled_rotation_offset": [
         0,
@@ -277,7 +277,7 @@
         0,
         0
     ],
-    "pinky_1_5U": false,
+    "pinky_1_5U": true,
     "first_1_5U_row": 0,
     "last_1_5U_row": 5,
     "skeletal": false,
@@ -289,10 +289,10 @@
     "left_wall_lower_x_offset": 0,
     "left_wall_lower_y_offset": 0,
     "left_wall_lower_z_offset": 0,
-    "wall_thickness": 4.5,
-    "wall_base_y_thickness": 4.5,
-    "wall_base_x_thickness": 4.5,
-    "wall_base_back_thickness": 4.5,
+    "wall_thickness": 3.5,
+    "wall_base_y_thickness": 3.5,
+    "wall_base_x_thickness": 3.5,
+    "wall_base_back_thickness": 3.5,
     "fixed_angles": [
         0.17453277777777776,
         0.17453277777777776,
@@ -321,7 +321,7 @@
         17.5
     ],
     "fixed_tenting": 0.0,
-    "plate_style": "NOTCH",
+    "plate_style": "NUB",
     "hole_keyswitch_height": 14.0,
     "hole_keyswitch_width": 14.0,
     "nub_keyswitch_height": 14.4,
@@ -441,10 +441,10 @@
         }
     },
     "screws_offset": "INSIDE",
-    "screw_insert_height": 3.8,
-    "screw_insert_bottom_radius": 1.25,
-    "screw_insert_top_radius": 1.25,
-    "screw_insert_outer_radius": 4.25,
+    "screw_insert_height": 4.5,
+    "screw_insert_bottom_radius": 2.1,
+    "screw_insert_top_radius": 2.1,
+    "screw_insert_outer_radius": 3.5,
     "wire_post_height": 7,
     "wire_post_overhang": 3.5,
     "wire_post_diameter": 2.6,
@@ -497,7 +497,7 @@
         10
     ],
     "pcb_screw_x_offsets": [
-        -5.5,
+        -1.5,
         7.75,
         22
     ],

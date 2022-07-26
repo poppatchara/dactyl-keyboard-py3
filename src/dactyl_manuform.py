@@ -185,11 +185,11 @@ def single_plate(cylinder_segments=100, side="right"):
         left_wall = box(lr_border, mount_height, plate_thickness)
         left_wall = translate(left_wall, ((lr_border / 2) + (keyswitch_width / 2), 0, plate_thickness / 2))
 
-        side_nub = cylinder(radius=1, height=2.75)
+        side_nub = cylinder(radius= 1.025, height=2.75)
         side_nub = rotate(side_nub, (90, 0, 0))
-        side_nub = translate(side_nub, (keyswitch_width / 2, 0, 1))
+        side_nub = translate(side_nub, (keyswitch_width / 2, 0, 2.1)) # last value control height of nub
 
-        nub_cube = box(1.5, 2.75, plate_thickness)
+        nub_cube = box(1.5, 2.75, plate_thickness/1.6)
         nub_cube = translate(nub_cube, ((1.5 / 2) + (keyswitch_width / 2),  0, plate_thickness / 2))
 
         side_nub2 = tess_hull(shapes=(side_nub, nub_cube))
@@ -3833,7 +3833,7 @@ def screw_insert(column, row, bottom_radius, top_radius, height, side='right'):
 
     if screws_offset == 'INSIDE':
         # debugprint('Shift Inside')
-        shift_left_adjust = wall_base_x_thickness
+        shift_left_adjust = wall_base_x_thickness/0.85
         shift_right_adjust = -wall_base_x_thickness/2
         shift_down_adjust = -wall_base_y_thickness/2
         shift_up_adjust = -wall_base_y_thickness/3
